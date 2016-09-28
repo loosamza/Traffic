@@ -5,7 +5,9 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +21,17 @@ public class MainActivity extends AppCompatActivity {
         Button button;
         textView = (TextView) findViewById(R.id.textView);
 
+        createListView();
+    }// Main method
+
+    private void createListView() {
+        MyData objMyData = new MyData();
+        int[] intIcon = objMyData.icon();
+        String[] strTitle = objMyData.title();
+
+        Myadapter objMyadapter = new  Myadapter(MainActivity.this,intIcon,strTitle);
+        ListView myListView = (ListView) findViewById(R.id.listView2);
+        myListView.setAdapter(objMyadapter);
     }
 
     public void clickAboutMe(View view){

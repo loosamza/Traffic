@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.scontz.traffic.MainActivity"
-    android:background="@drawable/login">
+    android:background="#f1a4a4">
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,25 +21,20 @@
         android:textStyle="bold"
         android:textColor="#ffffff" />
 
-    <LinearLayout
-        android:orientation="vertical"
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom">
+        android:layout_height="wrap_content"
+        android:text="@string/about_me"
+        android:id="@+id/button"
 
-        <ListView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/listView2" />
+        android:onClick="clickAboutMe"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/textView" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/about_me"
-            android:id="@+id/button"
-
-            android:onClick="clickAboutMe" />
-
-    </LinearLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView2"
+        android:layout_below="@+id/button" />
 
 </RelativeLayout>
