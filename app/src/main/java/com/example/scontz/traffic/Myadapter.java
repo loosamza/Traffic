@@ -57,4 +57,6 @@ public class Myadapter extends BaseAdapter {
         titleTextView.setText(trafficStrings[i]);
         return view1;
     }
+
+
 } //Main class

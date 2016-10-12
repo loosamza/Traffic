@@ -5,7 +5,7 @@ package com.example.scontz.traffic;
  */
 public class MyData {
     public int[] icon() {
-
+//pre
         int[] intIcon = {R.drawable.traffic_01, R.drawable.traffic_02, R.drawable.traffic_03,
                 R.drawable.traffic_04,
                 R.drawable.traffic_05, R.drawable.traffic_06, R.drawable.traffic_07, R.drawable.traffic_08,
