@@ -21,6 +21,13 @@
         android:textStyle="bold"
         android:textColor="#ffffff" />
 
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView2"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/button" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,13 +35,6 @@
         android:id="@+id/button"
 
         android:onClick="clickAboutMe"
-        android:layout_alignParentBottom="false"
-        android:layout_below="@+id/textView" />
-
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/listView2"
-        android:layout_below="@+id/button" />
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>
